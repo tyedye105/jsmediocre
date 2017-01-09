@@ -1,0 +1,6 @@
+<h3 {{action 'showText'}}>{{announcement.title}}, Priority: {{announcement.priority}}</h3>
+{{#if isTextvisible }}
+<p {{action 'hideText'}}>{{announcement.text}} </p>
+<h5>Announcement type: {{announcement.type}}</h5>
+<button {{action 'delete' announcement}}>Delete announcement</button>
+{{/if}}

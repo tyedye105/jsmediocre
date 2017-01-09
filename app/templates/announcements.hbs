@@ -1,0 +1,11 @@
+<h1>Kinda of Important Messages</h1>
+
+
+{{#each model as |announcement|}}
+  {{announcement-tile announcement=announcement
+  destroyAnnouncement = "destroyAnnouncement"}}
+{{/each}}
+
+{{new-announcement saveAnnouncement="saveAnnouncement"}}
+
+{{#link-to 'index'}}Home{{/link-to}}
