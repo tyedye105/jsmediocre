@@ -6,6 +6,12 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    firebase: {
+      apiKey: "AIzaSyC8OPZ5PfsKlSwIOXTOZDebeoSC1YTZ5DU",
+      authDomain: "mediocre-rental.firebaseapp.com",
+      databaseURL: "https://mediocre-rental.firebaseio.com",
+      storageBucket: "mediocre-rental.appspot.com"
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

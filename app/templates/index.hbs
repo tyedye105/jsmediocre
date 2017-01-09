@@ -3,7 +3,13 @@
 
 <h3>Here are our current properties</h3>
 
+<ul>
+  {{#each model as |rental|}}
+    {{rental-tile rental=rental destroyRental = "destroyRental"}}
+  {{/each}}
+</ul>
 
+{{new-rental saveRental2="saveRental3"}}
 
 {{#link-to 'contact'}}Contact Us!{{/link-to}}
 {{#link-to 'about'}}About{{/link-to}}
