@@ -3,6 +3,11 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   updateRentalForm: false,
   actions: {
+      delete(rental) {
+        if (confirm('Are you sure youw ant to delete this rental????')){
+          this.sendAction('destroyRental', rental);
+        }
+      },
     updateRentalForm() {
       this.set('updateRentalForm', true);
     },
