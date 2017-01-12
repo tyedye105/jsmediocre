@@ -7,10 +7,10 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
     firebase: {
-      apiKey: "AIzaSyC8OPZ5PfsKlSwIOXTOZDebeoSC1YTZ5DU",
-      authDomain: "mediocre-rental.firebaseapp.com",
-      databaseURL: "https://mediocre-rental.firebaseio.com",
-      storageBucket: "mediocre-rental.appspot.com"
+      apiKey: "AIzaSyCik8vOQmJ5fEyjd1e73pWVHgEs6Ulxdz8",
+    authDomain: "mediocre-rentals.firebaseapp.com",
+    databaseURL: "https://mediocre-rentals.firebaseio.com",
+    storageBucket: "mediocre-rentals.appspot.com",
     },
     EmberENV: {
       FEATURES: {

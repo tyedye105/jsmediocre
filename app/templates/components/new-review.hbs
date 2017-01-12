@@ -1,0 +1,22 @@
+{{#if newReview}}
+<h3>Stayed in one of the these places? Leave a review!</h3>
+<div id="review-form">
+  <form class="" action="index.html" method="post">
+    <div class="form-group">
+      <label for="rating">Rating</label>
+      {{input value=rating id="rating"}}
+    </div>
+    <div class="form-group">
+      <label for="content">Conent</label>
+      {{input value=content id="content"}}
+    </div>
+    <div class="form-group">
+      <label for="author">Author</label>
+      {{input value=author id="author"}}
+    </div>
+    <button {{action 'saveReview'}}>Submit Review</button>
+  </form>
+</div>
+{{else}}
+<button {{action 'reviewFormShow'}}>Leave a review</button>
+{{/if}}
